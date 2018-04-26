@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="aboutme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Angela Lin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xI4-BK-nRY">
+                                <rect key="frame" x="120" y="338" width="135" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="b5Q-dv-oj7"/>
+                                    <constraint firstAttribute="height" constant="35" id="e6p-ck-RTM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My favorite TV Show is Grey's Anatomy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNq-kn-4sz">
+                                <rect key="frame" x="12" y="431" width="351" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="351" id="QRc-hz-Prw"/>
+                                    <constraint firstAttribute="height" constant="23" id="nwJ-ff-LCs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="emoji" translatesAutoresizingMaskIntoConstraints="NO" id="MGU-gt-egi">
+                                <rect key="frame" x="67" y="127" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Vbs-8Y-gld"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKZ-w0-8jp">
+                                <rect key="frame" x="107" y="572" width="160" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="LKK-vG-C8O"/>
+                                </constraints>
+                                <state key="normal" title="My Favorite Book"/>
+                                <connections>
+                                    <action selector="bookPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMJ-8u-abg"/>
+                                    <segue destination="wAk-or-sBe" kind="show" identifier="toFavBook" id="dqK-N5-Zew"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xI4-BK-nRY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="36I-aP-CL1"/>
+                            <constraint firstItem="MKZ-w0-8jp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="4pt-fj-dGf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xI4-BK-nRY" secondAttribute="trailing" constant="120" id="7Hs-LF-Yg4"/>
+                            <constraint firstItem="xI4-BK-nRY" firstAttribute="top" secondItem="MGU-gt-egi" secondAttribute="bottom" constant="80" id="FkF-MT-RbQ"/>
+                            <constraint firstItem="wNq-kn-4sz" firstAttribute="top" secondItem="xI4-BK-nRY" secondAttribute="bottom" constant="57" id="Iey-ak-gDC"/>
+                            <constraint firstItem="wNq-kn-4sz" firstAttribute="top" secondItem="xI4-BK-nRY" secondAttribute="bottom" constant="57" id="JbR-bB-sdc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xI4-BK-nRY" secondAttribute="trailing" constant="120" id="LIC-kj-k7E"/>
+                            <constraint firstItem="MKZ-w0-8jp" firstAttribute="centerX" secondItem="wNq-kn-4sz" secondAttribute="centerX" id="QRE-77-5h9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MKZ-w0-8jp" secondAttribute="bottom" constant="37" id="Sxg-zt-syv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wNq-kn-4sz" secondAttribute="trailing" constant="12" id="Tif-zJ-AhU"/>
+                            <constraint firstItem="MGU-gt-egi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="ajH-JO-KQ0"/>
+                            <constraint firstItem="MGU-gt-egi" firstAttribute="centerX" secondItem="xI4-BK-nRY" secondAttribute="centerX" id="h2p-Ed-QyM"/>
+                            <constraint firstItem="wNq-kn-4sz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="q1h-JM-h9U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wNq-kn-4sz" secondAttribute="bottom" constant="213" id="s4g-Ax-tTG"/>
+                            <constraint firstItem="wNq-kn-4sz" firstAttribute="top" secondItem="xI4-BK-nRY" secondAttribute="bottom" constant="57" id="uuL-zT-MYw"/>
+                            <constraint firstItem="xI4-BK-nRY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="v9q-BG-KdY"/>
+                            <constraint firstItem="MGU-gt-egi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="x9x-SO-BWp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="33.733133433283363"/>
+        </scene>
+        <!--Favorite BookVC-->
+        <scene sceneID="eUl-xA-QGp">
+            <objects>
+                <viewController id="wAk-or-sBe" customClass="favoriteBookVC" customModule="aboutme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jda-rM-q40">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My favorite book series is The Hunger Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEH-bS-lpY">
+                                <rect key="frame" x="29" y="432" width="321" height="23"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hungerGames" translatesAutoresizingMaskIntoConstraints="NO" id="Jzz-r4-65q">
+                                <rect key="frame" x="65" y="65" width="244" height="335"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="335" id="3Aw-fZ-gsg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKA-MD-anR">
+                                <rect key="frame" x="313" y="20" width="37" height="30"/>
+                                <state key="normal" title="close"/>
+                                <connections>
+                                    <action selector="close:" destination="wAk-or-sBe" eventType="touchUpInside" id="nJ2-iD-IuI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jzz-r4-65q" firstAttribute="top" secondItem="Qiy-n1-2ct" secondAttribute="top" constant="45" id="6Wb-pB-gUy"/>
+                            <constraint firstItem="SKA-MD-anR" firstAttribute="trailing" secondItem="zEH-bS-lpY" secondAttribute="trailing" id="Bqz-lC-QwS"/>
+                            <constraint firstItem="zEH-bS-lpY" firstAttribute="top" secondItem="Jzz-r4-65q" secondAttribute="bottom" constant="32" id="M25-pV-Qfl"/>
+                            <constraint firstItem="zEH-bS-lpY" firstAttribute="leading" secondItem="Qiy-n1-2ct" secondAttribute="leading" constant="29" id="Pnu-NR-xN4"/>
+                            <constraint firstItem="Jzz-r4-65q" firstAttribute="centerX" secondItem="jda-rM-q40" secondAttribute="centerX" id="k7g-Ld-jdM"/>
+                            <constraint firstItem="Jzz-r4-65q" firstAttribute="leading" secondItem="Qiy-n1-2ct" secondAttribute="leading" constant="65" id="nDS-nO-sjJ"/>
+                            <constraint firstItem="SKA-MD-anR" firstAttribute="top" secondItem="Qiy-n1-2ct" secondAttribute="top" id="vSt-4B-jqX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qiy-n1-2ct"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LfX-Jh-Lta" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344.8" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="emoji" width="149" height="84"/>
+        <image name="hungerGames" width="600" height="483"/>
+    </resources>
+</document>

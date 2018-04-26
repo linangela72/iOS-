@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CCV-hf-zCt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="vW0-sm-nMP">
+            <objects>
+                <viewController id="CCV-hf-zCt" customClass="WelcomeVC" customModule="Hobbies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m8u-vq-Lzo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hobbies" translatesAutoresizingMaskIntoConstraints="NO" id="0tN-Ex-tnq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="247"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="3fO-LB-aO6"/>
+                                    <constraint firstAttribute="height" constant="247" id="Ksz-Jy-V3h"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDy-5O-Ce6">
+                                <rect key="frame" x="164" y="251" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BIKING" translatesAutoresizingMaskIntoConstraints="NO" id="7dq-7i-t0a">
+                                <rect key="frame" x="0.0" y="267" width="375" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="205" id="YUE-Rk-8b6"/>
+                                    <constraint firstAttribute="width" constant="375" id="eQV-xp-27g"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reading" translatesAutoresizingMaskIntoConstraints="NO" id="76m-Hf-OPF">
+                                <rect key="frame" x="0.0" y="472" width="375" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="2Ce-cN-cdX"/>
+                                    <constraint firstAttribute="width" constant="375" id="Z4Z-Ws-rIf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMs-wb-13O">
+                                <rect key="frame" x="102" y="329" width="171" height="81"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="55"/>
+                                <state key="normal" title="Biking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3e1-ba-8ro" kind="show" identifier="toBiking" id="El2-32-jyK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYB-Va-Q6Y">
+                                <rect key="frame" x="93" y="531" width="189" height="77"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="55"/>
+                                <state key="normal" title="Reading">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gww-L1-wQY" kind="show" identifier="toReading" id="xuR-mA-bt5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="76m-Hf-OPF" firstAttribute="leading" secondItem="u7w-ea-cTe" secondAttribute="leading" id="6xW-Pz-obh"/>
+                            <constraint firstItem="0tN-Ex-tnq" firstAttribute="top" secondItem="u7w-ea-cTe" secondAttribute="top" id="8AM-EC-JJg"/>
+                            <constraint firstItem="bYB-Va-Q6Y" firstAttribute="centerX" secondItem="76m-Hf-OPF" secondAttribute="centerX" id="K8w-eY-JVo"/>
+                            <constraint firstItem="76m-Hf-OPF" firstAttribute="bottom" secondItem="u7w-ea-cTe" secondAttribute="bottom" id="Qk9-Vn-mDR"/>
+                            <constraint firstItem="76m-Hf-OPF" firstAttribute="top" secondItem="7dq-7i-t0a" secondAttribute="bottom" id="Rz9-yD-bu1"/>
+                            <constraint firstItem="0tN-Ex-tnq" firstAttribute="trailing" secondItem="u7w-ea-cTe" secondAttribute="trailing" id="TUP-mu-kfM"/>
+                            <constraint firstItem="bYB-Va-Q6Y" firstAttribute="centerY" secondItem="76m-Hf-OPF" secondAttribute="centerY" id="V6i-tQ-mJ2"/>
+                            <constraint firstItem="lMs-wb-13O" firstAttribute="centerY" secondItem="7dq-7i-t0a" secondAttribute="centerY" id="Yd8-jd-dDD"/>
+                            <constraint firstItem="lMs-wb-13O" firstAttribute="top" secondItem="0tN-Ex-tnq" secondAttribute="bottom" constant="62" id="YjN-TN-JwM"/>
+                            <constraint firstItem="lMs-wb-13O" firstAttribute="centerX" secondItem="7dq-7i-t0a" secondAttribute="centerX" id="egN-uk-3tM"/>
+                            <constraint firstItem="76m-Hf-OPF" firstAttribute="trailing" secondItem="u7w-ea-cTe" secondAttribute="trailing" id="gfv-UY-Kxb"/>
+                            <constraint firstItem="0tN-Ex-tnq" firstAttribute="leading" secondItem="u7w-ea-cTe" secondAttribute="leading" id="h2X-RK-2OQ"/>
+                            <constraint firstItem="7dq-7i-t0a" firstAttribute="top" secondItem="0tN-Ex-tnq" secondAttribute="bottom" id="kTN-f7-2Yd"/>
+                            <constraint firstItem="7dq-7i-t0a" firstAttribute="leading" secondItem="u7w-ea-cTe" secondAttribute="leading" id="pa2-3O-3hw"/>
+                            <constraint firstItem="76m-Hf-OPF" firstAttribute="top" secondItem="7dq-7i-t0a" secondAttribute="bottom" id="rLm-IA-Jw2"/>
+                            <constraint firstItem="7dq-7i-t0a" firstAttribute="trailing" secondItem="u7w-ea-cTe" secondAttribute="trailing" id="rOP-jj-P2Y"/>
+                            <constraint firstItem="lMs-wb-13O" firstAttribute="leading" secondItem="u7w-ea-cTe" secondAttribute="leading" constant="102" id="yps-sd-PL6"/>
+                            <constraint firstItem="7dq-7i-t0a" firstAttribute="top" secondItem="0tN-Ex-tnq" secondAttribute="bottom" id="zl0-84-etP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u7w-ea-cTe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VNH-DD-fq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="349"/>
+        </scene>
+        <!--BikingVC-->
+        <scene sceneID="W2A-kf-lBF">
+            <objects>
+                <viewController id="3e1-ba-8ro" customClass="bikingVC" customModule="Hobbies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cd-xV-tRC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDA-0h-CGQ">
+                                <rect key="frame" x="154" y="605" width="66" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CCV-hf-zCt" kind="show" id="Rfe-tf-SFC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BIKING" translatesAutoresizingMaskIntoConstraints="NO" id="wjh-j6-cRr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="Ubi-dO-fjC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Places to bike in NYC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdJ-u5-yES">
+                                <rect key="frame" x="106" y="250" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hudson River Greenway" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYx-1m-9pt">
+                                <rect key="frame" x="96" y="323" width="183" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Central Park" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-Hi-fAu">
+                                <rect key="frame" x="140" y="452" width="94" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Yf9-Hd-TcL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Governer's Island" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x9-7z-E5e">
+                                <rect key="frame" x="110" y="384" width="154" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wjh-j6-cRr" firstAttribute="top" secondItem="yce-ph-5EC" secondAttribute="top" id="54O-Ew-r1W"/>
+                            <constraint firstItem="lYx-1m-9pt" firstAttribute="top" secondItem="qdJ-u5-yES" secondAttribute="bottom" constant="70" id="AIn-8F-d4s"/>
+                            <constraint firstItem="lYx-1m-9pt" firstAttribute="centerX" secondItem="qdJ-u5-yES" secondAttribute="centerX" id="CEc-Jh-5x6"/>
+                            <constraint firstItem="dUK-Hi-fAu" firstAttribute="centerX" secondItem="8x9-7z-E5e" secondAttribute="centerX" id="MKS-4a-MKW"/>
+                            <constraint firstItem="wjh-j6-cRr" firstAttribute="centerX" secondItem="mDA-0h-CGQ" secondAttribute="centerX" id="MT0-le-iBa"/>
+                            <constraint firstItem="lYx-1m-9pt" firstAttribute="centerX" secondItem="8x9-7z-E5e" secondAttribute="centerX" id="NqD-v5-SVI"/>
+                            <constraint firstAttribute="bottom" secondItem="mDA-0h-CGQ" secondAttribute="bottom" constant="20" symbolic="YES" id="Nys-ar-eI2"/>
+                            <constraint firstItem="wjh-j6-cRr" firstAttribute="leading" secondItem="9cd-xV-tRC" secondAttribute="leading" id="SxI-mw-jyK"/>
+                            <constraint firstItem="wjh-j6-cRr" firstAttribute="centerX" secondItem="qdJ-u5-yES" secondAttribute="centerX" id="fGz-jl-4Qc"/>
+                            <constraint firstItem="qdJ-u5-yES" firstAttribute="top" secondItem="wjh-j6-cRr" secondAttribute="bottom" constant="34" id="fmm-Nj-sqe"/>
+                            <constraint firstItem="mDA-0h-CGQ" firstAttribute="centerX" secondItem="9cd-xV-tRC" secondAttribute="centerX" id="juP-h9-ftx"/>
+                            <constraint firstItem="8x9-7z-E5e" firstAttribute="top" secondItem="lYx-1m-9pt" secondAttribute="bottom" constant="42" id="k3E-k9-Lhy"/>
+                            <constraint firstItem="dUK-Hi-fAu" firstAttribute="top" secondItem="8x9-7z-E5e" secondAttribute="bottom" constant="28" id="lSk-GB-Vcj"/>
+                            <constraint firstAttribute="bottom" secondItem="dUK-Hi-fAu" secondAttribute="bottom" constant="194" id="uBO-Yd-SQI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yce-ph-5EC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZZA-zF-JOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="19"/>
+        </scene>
+        <!--ReadingVC-->
+        <scene sceneID="QmJ-o5-6bd">
+            <objects>
+                <viewController id="Gww-L1-wQY" customClass="readingVC" customModule="Hobbies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GCS-S8-WU7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4K-ue-e3q">
+                                <rect key="frame" x="154" y="605" width="66" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CCV-hf-zCt" kind="show" id="E4P-pl-0rV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reading" translatesAutoresizingMaskIntoConstraints="NO" id="ZPN-7C-Ssu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="MM4-2r-h6K"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Books I want to read:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Boi-Xp-aVS">
+                                <rect key="frame" x="107" y="386" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Books read:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ds-bK-Mdj">
+                                <rect key="frame" x="142" y="237" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Boi-Xp-aVS" secondAttribute="bottom" constant="260" id="2DX-9g-ypU"/>
+                            <constraint firstItem="1Ds-bK-Mdj" firstAttribute="top" secondItem="ZPN-7C-Ssu" secondAttribute="bottom" constant="36" id="9qt-b8-tzu"/>
+                            <constraint firstItem="ZPN-7C-Ssu" firstAttribute="top" secondItem="5lL-la-ags" secondAttribute="top" id="DC7-jx-NTx"/>
+                            <constraint firstItem="ZPN-7C-Ssu" firstAttribute="centerX" secondItem="U4K-ue-e3q" secondAttribute="centerX" id="Oh1-TR-sYs"/>
+                            <constraint firstItem="ZPN-7C-Ssu" firstAttribute="leading" secondItem="GCS-S8-WU7" secondAttribute="leading" id="T2f-GZ-PtF"/>
+                            <constraint firstItem="ZPN-7C-Ssu" firstAttribute="centerX" secondItem="Boi-Xp-aVS" secondAttribute="centerX" id="hUM-VC-rcW"/>
+                            <constraint firstItem="U4K-ue-e3q" firstAttribute="centerX" secondItem="GCS-S8-WU7" secondAttribute="centerX" id="k6h-lC-kGO"/>
+                            <constraint firstItem="ZPN-7C-Ssu" firstAttribute="centerX" secondItem="1Ds-bK-Mdj" secondAttribute="centerX" id="pp1-zj-mDd"/>
+                            <constraint firstAttribute="bottom" secondItem="U4K-ue-e3q" secondAttribute="bottom" constant="20" symbolic="YES" id="ucu-22-jSg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5lL-la-ags"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMm-pw-30R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BIKING" width="96" height="58"/>
+        <image name="hobbies" width="137" height="92"/>
+        <image name="reading" width="91" height="61"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="E4P-pl-0rV"/>
+    </inferredMetricsTieBreakers>
+</document>
